@@ -27,7 +27,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 public class CustomersServiceApplication {
 
 	public static void main(String[] args) {
-		System.setProperty("spring.config.name", "customers-service");
+		//System.setProperty("spring.config.name", "customers-service");
 
 		SpringApplication.run(CustomersServiceApplication.class, args);
 	}

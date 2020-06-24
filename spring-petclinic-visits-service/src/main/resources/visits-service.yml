@@ -18,11 +18,19 @@ eureka:
     instance-id: ${spring.application.name}:${random.uuid}
 
 ---
+spring.jpa.hibernate.ddl-auto: none
+
 spring:
   profiles: docker
+  application:
+     name: visits-service  # Service registers under this name
+  datasource:
+     schema: classpath*:db/hsqldb/schema.sql
+     data: classpath*:db/hsqldb/data.sql
+  
 #  zipkin:
 #    baseUrl: http://tracing-server:9411
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery-server:8761/eureka/
+      defaultZone: http://34.67.251.81:8081/eureka/

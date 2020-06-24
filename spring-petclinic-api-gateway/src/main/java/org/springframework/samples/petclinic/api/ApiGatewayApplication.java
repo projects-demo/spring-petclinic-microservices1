@@ -49,7 +49,7 @@ import java.time.Duration;
 public class ApiGatewayApplication {
 
     public static void main(String[] args) {
-		System.setProperty("spring.config.name", "api-gateway");
+		//System.setProperty("spring.config.name", "api-gateway");
 
         SpringApplication.run(ApiGatewayApplication.class, args);
     }

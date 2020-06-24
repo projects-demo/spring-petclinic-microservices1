@@ -27,7 +27,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 public class VisitsServiceApplication {
 
     public static void main(String[] args) {
-		System.setProperty("spring.config.name", "visits-service");
+		//System.setProperty("spring.config.name", "visits-service");
 
         SpringApplication.run(VisitsServiceApplication.class, args);
     }
