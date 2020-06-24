@@ -20,6 +20,12 @@ eureka:
 ---
 spring:
   profiles: docker
+  application:
+     name: customers-service  # Service registers under this name
+  datasource:
+     schema: classpath*:db/hsqldb/schema.sql
+     data: classpath*:db/hsqldb/data.sql
+  
 #  zipkin:
 #    baseUrl: http://tracing-server:9411
 eureka:
